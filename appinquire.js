@@ -14,12 +14,12 @@ console.clear();
 
 const main = async() => {
 
-    console.log("Hola Mundo.".red);
+    console.log("Hola Mundo.".green);
     let opt = '';
 
     do {
-        // opt = await inquirerMenu();
-        // console.log('Ha seleccionado la opción', { opt });
+        opt = await inquirerMenu();
+        console.log('Ha seleccionado la opción', { opt });
 
         const tareas = new Tareas();
         const tarea = new Tarea("Comprar comida.");
@@ -32,7 +32,6 @@ const main = async() => {
 
     } while (opt !== '0');
 
-    //pausa();
 }
 
 main();
